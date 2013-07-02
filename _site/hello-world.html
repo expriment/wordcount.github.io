@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+　<head>
+　　<meta http-equiv="content-type" content-type="text/html; charset=utf-8" />
+　　　<title>hello world</title>
+　</head>
+　<body>
+
+　　<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <style type="text/css">
+table.sourceCode, tr.sourceCode, td.lineNumbers, td.sourceCode {
+  margin: 0; padding: 0; vertical-align: baseline; border: none; }
+table.sourceCode { width: 100%; background-color: #303030; color: #cccccc; }
+td.lineNumbers { text-align: right; padding-right: 4px; padding-left: 4px; }
+td.sourceCode { padding-left: 5px; }
+pre, code { color: #cccccc; background-color: #303030; }
+code > span.kw { color: #f0dfaf; }
+code > span.dt { color: #dfdfbf; }
+code > span.dv { color: #dcdccc; }
+code > span.bn { color: #dca3a3; }
+code > span.fl { color: #c0bed1; }
+code > span.ch { color: #dca3a3; }
+code > span.st { color: #cc9393; }
+code > span.co { color: #7f9f7f; }
+code > span.ot { color: #efef8f; }
+code > span.al { color: #ffcfaf; }
+code > span.fu { color: #efef8f; }
+code > span.er { color: #c3bf9f; }
+  </style>
+</head>
+<body>
+<p>hello</p>
+<p><img style="vertical-align:middle" src="http://chart.apis.google.com/chart?cht=tx&amp;chl=e%5Ex%20%3D%20%5Csum_%7Bn%3D0%7D%5E%5Cinfty%20%5Cfrac%7Bx%5En%7D%7Bn%21%7D%20%3D%20%5Clim_%7Bn%5Crightarrow%5Cinfty%7D%20%281%2Bx%2Fn%29%5En" alt="e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n" title="e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n" /></p>
+<table class="sourceCode python numberLines"><tr class="sourceCode"><td class="lineNumbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="sourceCode"><pre><code class="sourceCode python"><span class="kw">class</span> FSM(<span class="dt">object</span>):
+
+<span class="co">&quot;&quot;&quot;This is a Finite State Machine (FSM).</span>
+<span class="co">&quot;&quot;&quot;</span>
+
+<span class="kw">def</span> <span class="ot">__init__</span>(<span class="ot">self</span>, initial_state, memory=<span class="ot">None</span>):
+
+    <span class="co">&quot;&quot;&quot;This creates the FSM. You set the initial state here. The &quot;memory&quot;</span>
+<span class="co">    attribute is any object that you want to pass along to the action</span>
+<span class="co">    functions. It is not used by the FSM. For parsing you would</span>
+<span class="co">    typically pass a list to be used as a stack. &quot;&quot;&quot;</span>
+
+    <span class="co"># Map (input_symbol, current_state) --&gt; (action, next_state).</span>
+    <span class="ot">self</span>.state_transitions = {}
+    <span class="co"># Map (current_state) --&gt; (action, next_state).</span>
+    <span class="ot">self</span>.state_transitions_any = {}
+    <span class="ot">self</span>.default_transition = <span class="ot">None</span>
+    ...</code></pre></td></tr></table>
+</body>
+</html>
+
+
+　</body>
+</html>

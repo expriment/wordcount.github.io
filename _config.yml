@@ -1,0 +1,8 @@
+baseurl: 
+permalink: none
+markdown: pandoc
+pandoc:
+  extensions: 
+    - webtex 
+    - standalone
+    - highlight-style: zenburn
