@@ -4,5 +4,5 @@ markdown: pandoc
 pandoc:
   extensions: 
     - webtex 
-    - standalone
+    - smart
     - highlight-style: zenburn

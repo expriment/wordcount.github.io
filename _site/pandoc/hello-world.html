@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+　<head>
+　  <meta http-equiv="content-type" content-type="text/html; charset=utf-8" />
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+　　<title>hello world</title>
+　</head>
+　<body>
+    <div class="container-fluid">
+      <div class="row-fluid">
+        <div class="span10">
+          <div id="post">
+  <h2><a href="/pandoc/hello-world.html">
+    hello world
+  </a></h2>
+  <div id="date">published 09 Jun 2013</div>
+  <p>hello</p>
+<p><img style="vertical-align:middle" src="http://chart.apis.google.com/chart?cht=tx&amp;chl=e%5Ex%20%3D%20%5Csum_%7Bn%3D0%7D%5E%5Cinfty%20%5Cfrac%7Bx%5En%7D%7Bn%21%7D%20%3D%20%5Clim_%7Bn%5Crightarrow%5Cinfty%7D%20%281%2Bx%2Fn%29%5En" alt="e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n" title="e^x = \sum_{n=0}^\infty \frac{x^n}{n!} = \lim_{n\rightarrow\infty} (1+x/n)^n" /></p>
+<table class="sourceCode python numberLines"><tr class="sourceCode"><td class="lineNumbers"><pre>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+</pre></td><td class="sourceCode"><pre><code class="sourceCode python"><span class="kw">class</span> FSM(<span class="dt">object</span>):
+
+<span class="co">&quot;&quot;&quot;This is a Finite State Machine (FSM).</span>
+<span class="co">&quot;&quot;&quot;</span>
+
+<span class="kw">def</span> <span class="ot">__init__</span>(<span class="ot">self</span>, initial_state, memory=<span class="ot">None</span>):
+
+    <span class="co">&quot;&quot;&quot;This creates the FSM. You set the initial state here. The &quot;memory&quot;</span>
+<span class="co">    attribute is any object that you want to pass along to the action</span>
+<span class="co">    functions. It is not used by the FSM. For parsing you would</span>
+<span class="co">    typically pass a list to be used as a stack. &quot;&quot;&quot;</span>
+
+    <span class="co"># Map (input_symbol, current_state) --&gt; (action, next_state).</span>
+    <span class="ot">self</span>.state_transitions = {}
+    <span class="co"># Map (current_state) --&gt; (action, next_state).</span>
+    <span class="ot">self</span>.state_transitions_any = {}
+    <span class="ot">self</span>.default_transition = <span class="ot">None</span>
+    ...</code></pre></td></tr></table>
+
+  <hr />
+  <div id="disqus">
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+        var disqus_shortname = 'sladhu'; // required: replace example with your forum shortname
+        (function() {
+            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+  </div>
+</div>
+
+
+        </div>
+        <div class="span2">
+        </div>
+      </div>
+    </div>
+　</body>
+</html>
