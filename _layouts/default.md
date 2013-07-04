@@ -2,7 +2,7 @@
 <html>
 　<head>
 　  <meta http-equiv="content-type" content-type="text/html; charset=utf-8" />
-    <link href="assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
 　　<title>{{ page.title }}</title>
 　</head>
 　<body>
@@ -12,6 +12,14 @@
           {{ content }}
         </div>
         <div class="span2">
+          <div id="category">
+            <h4>Category</h4>
+            <ul>
+              {% for category in site.categories %}
+              <li><a href="/categories/{{ category | first }}/" title="view all posts">{{ category | first }} {{ category | last | size }}</a></li>
+              {% endfor %}
+            </ul>
+          </div>
         </div>
       </div>
     </div>
