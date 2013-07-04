@@ -2,7 +2,8 @@
 <html>
 　<head>
 　  <meta http-equiv="content-type" content-type="text/html; charset=utf-8" />
-    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="/assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="screen">
+    <link href="/assets/css/style.css" rel="stylesheet" type="text/css"  media="screen">
 　　<title>{{ page.title }}</title>
 　</head>
 　<body>
@@ -20,6 +21,12 @@
               {% endfor %}
             </ul>
           </div>
+          <div id="tag">
+          <ul class="tag_box inline">
+              {% for tag in site.tags %}
+              <li><a href="/tags/{{ tag | first }}/" title="view all posts">{{ tag | first }} <span>{{ tag | last | size }}</span></a></li>
+              {% endfor %}
+          </ul>
         </div>
       </div>
     </div>

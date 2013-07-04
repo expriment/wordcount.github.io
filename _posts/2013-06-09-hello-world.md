@@ -2,6 +2,7 @@
 layout: post
 title: hello world
 category: pandoc
+tag: [tag, test, hello]
 ---
 hello
 

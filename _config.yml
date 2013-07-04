@@ -3,6 +3,8 @@ permalink: none
 markdown: pandoc
 pandoc:
   extensions: 
-    - webtex 
     - smart
+    - webtex
+    - standalone
     - highlight-style: zenburn
+pygments: true
