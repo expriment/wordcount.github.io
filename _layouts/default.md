@@ -17,14 +17,14 @@
             <h4>Category</h4>
             <ul>
               {% for category in site.categories %}
-              <li><a href="/categories/{{ category | first }}/" title="view all posts">{{ category | first }} {{ category | last | size }}</a></li>
+              <li><a href="/categories/{{ category | first }}/index.html" title="view all posts">{{ category | first }} {{ category | last | size }}</a></li>
               {% endfor %}
             </ul>
           </div>
           <div id="tag">
           <ul class="tag_box inline">
               {% for tag in site.tags %}
-              <li><a href="/tags/{{ tag | first }}/" title="view all posts">{{ tag | first }} <span>{{ tag | last | size }}</span></a></li>
+              <li><a href="/tags/{{ tag | first }}/index.html" title="view all posts">{{ tag | first }} <span>{{ tag | last | size }}</span></a></li>
               {% endfor %}
           </ul>
         </div>
