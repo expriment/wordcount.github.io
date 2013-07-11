@@ -13,6 +13,20 @@
           {{ content }}
         </div>
         <div class="span2">
+          <div id="search">
+            <script>
+              (function() {
+               var cx = '003301499565717175039:boct6bawcwa';
+               var gcse = document.createElement('script');
+               gcse.type = 'text/javascript';
+               gcse.async = true;
+               gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//www.google.com/cse/cse.js?cx=' + cx;
+               var s = document.getElementsByTagName('script')[0];
+               s.parentNode.insertBefore(gcse, s);
+              })();
+            </script>
+            <gcse:search></gcse:search>
+          </div>
           <div id="category">
             <h4>Category</h4>
             <ul>
